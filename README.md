@@ -1,4 +1,4 @@
-# Wardly -- Pre-Visit Clinical Intake Agent
+# Wardly : Pre-Visit Clinical Intake Agent
 
 A CLI-based AI agent that conducts pre-visit clinical intake interviews with patients and generates structured clinical briefs. The agent systematically collects the **Chief Complaint (CC)**, **History of Present Illness (HPI)**  and **Review of Systems (ROS)**, then produces a formatted clinical summary ready for provider review.
 
