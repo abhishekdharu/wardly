@@ -1,0 +1,25 @@
+[project]
+name = "wardly"
+version = "0.1.0"
+description = "Pre-visit clinical intake agent -- conducts patient interviews and generates structured clinical briefs (CC, HPI, ROS)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.40.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+wardly = "src.cli.main:run"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
